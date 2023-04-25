@@ -1,0 +1,40 @@
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .monkey {
+    stroke: #D84315;
+    stroke-width: 1.5px;
+    
+    stroke-dashoffset: -2000;
+    stroke-dasharray: 2000;
+    
+    animation: monkey 5s;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+  }
+  
+  @keyframes monkey {
+    0% {
+      stroke-dashoffset:-2000;
+      
+    }
+    
+    25% {
+      stroke: #D84315;
+    }
+    
+    50% {
+      stroke: #039BE5;
+    }
+    
+    100% {
+      stroke-dashoffset: 0;
+      stroke: #FDD835;
+    }
+  }
